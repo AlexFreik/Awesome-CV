@@ -20,3 +20,9 @@ coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
 
 clean:
 	rm -rf $(EXAMPLES_DIR)/*.pdf
+
+clean-build:
+	rm -rf $(EXAMPLES_DIR)/*.aux
+	rm -rf $(EXAMPLES_DIR)/*.log
+	rm -rf $(EXAMPLES_DIR)/*.toc
+	rm -rf $(EXAMPLES_DIR)/*.out
